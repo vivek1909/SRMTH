@@ -1,0 +1,181 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+body, html {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff
+  url(https://cdn-images-1.medium.com/max/1600/0*cWpsf9D3g346Va20.gif) no-repeat center ;
+  z-index: 99999;
+}
+
+.bg {
+  height: 100%; 
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg .btn {
+  cursor: pointer;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.centered h1 {
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 5em;
+}
+
+hr {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.btn {
+  outline: none;
+  text-decoration: none;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.bg, #mainNavbar {
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+#about {
+  background-color: #e0e0d1;
+}
+
+#about hr {
+  margin-bottom: 50px;
+}
+
+#domain {
+  background: #ffffb3;
+}
+
+#domain hr {
+  margin-bottom: 50px;
+}
+
+#domain .card {
+  height: 100%;
+}
+ .card {
+  justify-content: center;
+  
+}
+
+.navbar.scrolled {
+  background: black;
+  transition: background 1s;
+}
+
+.blurb p {
+  color: brown;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+section#counter-stats {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.stats {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stats .fa {
+  color: #008080;
+  font-size: 60px;
+}
+
+/*/ end count stats /*/
+
+#team {
+  background: #ffffb3;
+}
+
+#team .container {
+  margin-top: 50px;
+}
+
+/* Flip Cards CSS */
+
+.card {
+  margin: 10px 10px;
+}
+
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.img-fluid {
+  height: 50vh;
+}
+
+#team .fab {
+  font-size: 40px;
+}
