@@ -1,3 +1,25 @@
+/* NAVBAR */
+.bg, #mainNavbar {
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+.navbar.scrolled {
+  background: black;
+  transition: background 1s;
+}
+/* NAVBAR ENDS */
+
+
+
 #projects {
   background: #d9ffb3;
 }
