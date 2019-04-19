@@ -135,47 +135,6 @@ section#counter-stats {
   margin-top: 50px;
 }
 
-/* Flip Cards CSS */
-
-.card {
-  margin: 10px 10px;
-}
-
-.card-container {
-  display: grid;
-  perspective: 700px;
-}
-
-.card-flip {
-  display: grid;
-  grid-template: 1fr / 1fr;
-  grid-template-areas: "frontAndBack";
-  transform-style: preserve-3d;
-  transition: all 0.7s ease;
-}
-
-.card-flip div {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-}
-
-.front {
-  grid-area: frontAndBack;
-}
-
-.back {
-  grid-area: frontAndBack;
-  transform: rotateY(-180deg);
-}
-
-.card-container:hover .card-flip {
-  transform: rotateY(180deg);
-}
-
-.img-fluid {
-  height: 50vh;
-}
-
 #team .fab {
   font-size: 40px;
 }
