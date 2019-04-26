@@ -1,3 +1,5 @@
+/* General */
+
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 body, html {
   height: 100%;
@@ -13,6 +15,10 @@ body, html {
   url(https://cdn-images-1.medium.com/max/1600/0*cWpsf9D3g346Va20.gif) no-repeat center ;
   z-index: 99999;
 }
+
+
+
+/* Home page section */
 
 .bg {
   height: 100%; 
@@ -58,6 +64,10 @@ section {
   padding-bottom: 50px;
 }
 
+
+
+/* Navbar */
+
 .bg, #mainNavbar {
   opacity: 0;
   margin-top: 100px;
@@ -71,6 +81,15 @@ section {
   }
 }
 
+.navbar.scrolled {
+  background: black;
+  transition: background 1s;
+}
+
+
+
+/* About Section */
+
 #about {
   background-color: #e0e0d1;
 }
@@ -78,6 +97,10 @@ section {
 #about hr {
   margin-bottom: 50px;
 }
+
+
+
+/* Domain Section */
 
 #domain {
   background: #ffffb3;
@@ -95,19 +118,11 @@ section {
   
 }
 
-.navbar.scrolled {
-  background: black;
-  transition: background 1s;
-}
 
-.blurb p {
-  color: brown;
-  font-weight: 100;
-  font-size: 1.125rem;
-  line-height: 2;
-}
 
-section#counter-stats {
+/* Stats Counter */
+
+#counter-stats {
 	display: flex;
 	justify-content: center;
 	margin-top: 100px;
@@ -123,18 +138,4 @@ section#counter-stats {
 .stats .fa {
   color: #008080;
   font-size: 60px;
-}
-
-/*/ end count stats /*/
-
-#team {
-  background: #ffffb3;
-}
-
-#team .container {
-  margin-top: 50px;
-}
-
-#team .fab {
-  font-size: 40px;
 }
