@@ -139,3 +139,13 @@ section {
   color: #008080;
   font-size: 60px;
 }
+
+
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
