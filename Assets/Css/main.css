@@ -143,6 +143,23 @@ section {
 
 
 
+
+/* Sponsors Section */
+
+#sponsors h1 {
+  text-align: center;
+}
+
+#sponsors ul {
+  list-style-type: none;
+}
+
+#sponsors li img {
+  width: 100px;
+}
+
+
+
 /* Footer */
 
 footer {
