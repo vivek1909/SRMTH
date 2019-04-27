@@ -5,6 +5,7 @@ body, html {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
+  font: normal 16px sans-serif;
 }
 
 #preloader {
@@ -16,7 +17,14 @@ body, html {
   z-index: 99999;
 }
 
+section:not(.hero):nth-child(odd) {
+  background-color: #f5f5f5;
+}
 
+h1 {
+  font: bold 52px "Open Sans", sans-serif;
+  opacity: 0.7;
+}
 
 /* Home page section */
 
@@ -49,11 +57,12 @@ body, html {
 }
 
 hr {
-	width: 400px;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
+  width: 250px;
+  height: 3px;
+  background-color: #3f51b5;
+  border: 0;
+  margin-bottom: 50px;
 }
-
 .btn {
   outline: none;
   text-decoration: none;
@@ -82,7 +91,7 @@ section {
 }
 
 .navbar.scrolled {
-  background: black;
+  background: #0d0d0d;
   transition: background 1s;
 }
 
@@ -90,8 +99,8 @@ section {
 
 /* About Section */
 
-#about {
-  background-color: #e0e0d1;
+#about p {
+  text-align: center;
 }
 
 #about hr {
@@ -101,10 +110,6 @@ section {
 
 
 /* Domain Section */
-
-#domain {
-  background: #ffffb3;
-}
 
 #domain hr {
   margin-bottom: 50px;
@@ -146,17 +151,26 @@ section {
 
 /* Sponsors Section */
 
-#sponsors h1 {
+#sponsors {
   text-align: center;
 }
 
-#sponsors ul {
+.grid {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.grid ul {
   list-style-type: none;
 }
 
-#sponsors li img {
+.grid img {
   width: 100px;
+  height: 80px; 
 }
+
+
 
 
 
@@ -168,7 +182,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: black;
+  background-color: #0d0d0d;
   color: #fff;
   padding: 20px 0;
 }
