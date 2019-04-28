@@ -28,17 +28,27 @@ $('.counting').each(function() {
     },
   
     {
-        duration: 3000,
-        easing:'linear',
-        step: function() {
-            $this.text(Math.floor(this.countNum));
-        },
-        complete: function() {
-            $this.text(this.countNum);
-        }
+  
+      duration: 2000,
+      easing:'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+        //alert('finished');
+      }
+  
     });  
-});
+    
+  
+  });
 
+
+
+
+
+//  Back to Top Button   
 
 var btn = $('#button');
 
