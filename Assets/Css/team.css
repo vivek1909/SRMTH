@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    background: black;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar a {
+    outline: none;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
