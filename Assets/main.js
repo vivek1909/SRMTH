@@ -8,6 +8,7 @@ $(function () {
 });
 
 
+
 // Preloader
 
 var loader = document.getElementById('preloader');
@@ -28,21 +29,16 @@ $('.counting').each(function() {
     },
   
     {
-  
-      duration: 2000,
-      easing:'linear',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
-        //alert('finished');
-      }
-  
+        duration: 5000,
+        easing:'linear',
+        step: function() {
+            $this.text(Math.floor(this.countNum));
+        },
+        complete: function() {
+            $this.text(this.countNum);
+        }
     });  
-    
-  
-  });
+});
 
 
 
@@ -53,7 +49,7 @@ $('.counting').each(function() {
 var btn = $('#button');
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 200) {
+  if ($(window).scrollTop() > 300) {
     btn.addClass('show');
   } else {
     btn.removeClass('show');
@@ -64,3 +60,4 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
