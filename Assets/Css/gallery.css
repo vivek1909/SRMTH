@@ -1,3 +1,7 @@
+html, .gallery {
+    background: #f0e6ff;
+}
+
 .gallery h1 {
     text-align: center;
     font: bold 52px "Open Sans", sans-serif;
