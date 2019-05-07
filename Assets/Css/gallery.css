@@ -1,18 +1,38 @@
 html, .gallery {
     background: #f0e6ff;
+    scroll-behavior: smooth;
+}
+
+html {
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    opacity: 1;
 }
 
 
 
 /* Navbar Section */
   
-  
 .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     z-index: 1;
     height: 50px;
     width: 100%;
-    background-color: #4d4d4d;
+    background-color: black;
     position: fixed;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
 }
   
 .nav > .nav-header {
@@ -41,7 +61,7 @@ html, .gallery {
 }
   
 .nav-links {
-    float: right;
+    opacity: 0.98;
     font-size: 18px;
 }
   
@@ -60,14 +80,14 @@ html, .gallery {
     display: none;
 }
   
-@media (max-width:600px) {
+@media (max-width: 700px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
       right: 0px;
       top: 0px;
     }
-
+    
     .nav > .nav-btn > label {
       display: inline-block;
       width: 50px;
@@ -197,7 +217,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0d0d0d;
+    background: black;
     color: #fff;
     padding: 20px 0;
 }
@@ -228,3 +248,49 @@ footer a:hover i {
     transform: scale(1.4);
     transition-duration: 0.3s;
 }
+
+
+
+/* Back to Top Button */
+
+#button {
+    display: inline-block;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 30px;
+    color: #fff;
+  }
+  
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  
+  #button:active {
+    background-color: #555;
+  }
+  
+  #button.show {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  
