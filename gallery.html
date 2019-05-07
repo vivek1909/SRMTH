@@ -20,7 +20,6 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    
    <!-- Google Font -->
-   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
    
@@ -29,34 +28,34 @@
 
 </head>
 <body>
-        <div class="nav">
-                <input type="checkbox" id="nav-check">
-                <div class="nav-header">
-                  <div class="nav-title">
-                    JoGeek
-                  </div>
-                </div>
-                <div class="nav-btn">
-                  <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </label>
-                </div>
+    <div class="nav">
+    <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="index.html" style="text-decoration: none;">JoGeek</a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
                 
-                <div class="nav-links">
-                  <a href="//github.io/jo_geek" target="_blank">Github</a>
-                  <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
-                  <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
-                  <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
-                  <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
-                </div>
-              </div>
+        <div class="nav-links">
+            <a href="https://github.io/jo_geek">Github</a>
+            <a href="https://github.io/jo_geek">Stackoverflow</a>
+            <a href="https://in.linkedin.com/in/jonesvinothjoseph">LinkedIn</a>
+            <a href="https://codepen.io/jo_Geek/">Codepen</a>
+            <a href="https://jsfiddle.net/user/jo_Geek/">JsFiddle</a>
+        </div>
+    </div>
       
 
 
-    <div class="gallery">
-        <h1>GALLERY</h1>
+    <div class="gallery" >
+        <h1 style="z-index:-1;">GALLERY</h1>
         <p>Some of the good moments of our team captured by random people. Here are some pictures from our team who have had elevated success and experiences together.</p>
         <hr>
         <ul class="grid">
@@ -86,5 +85,14 @@
         </ul>
     </footer>
 
+
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".nav");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </body>
 </html>
