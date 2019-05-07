@@ -107,6 +107,7 @@ html {
     .nav > .nav-links {
         position: absolute;
         display: block;
+        text-align: center;
         width: 100%;
         background-color: #333;
         height: 0px;

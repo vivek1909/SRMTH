@@ -1,6 +1,5 @@
 /* General */
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 body, html {
   height: 100%;
   margin: 0;
@@ -210,6 +209,7 @@ section {
 
   .nav > .nav-links {
     position: absolute;
+    text-align: center;
     display: block;
     width: 100%;
     background-color: #333;
