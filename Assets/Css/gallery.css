@@ -83,55 +83,55 @@ html {
   
 @media (max-width: 700px) {
     .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
     }
     
     .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
     }
 
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
         cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
     }
 
     .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
     }
 
     .nav > .nav-links > a {
-      display: block;
-      width: 100%;
+        display: block;
+        width: 100%;
     }
 
     .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
+        
     }
 
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
+        height: calc(100vh - 50px);
+        overflow-y: auto;
     }
 }
 
@@ -269,9 +269,9 @@ footer a:hover i {
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-  }
+}
   
-  #button::after {
+#button::after {
     content: "\f077";
     font-family: FontAwesome;
     font-weight: normal;
@@ -279,19 +279,19 @@ footer a:hover i {
     font-size: 1.5em;
     line-height: 30px;
     color: #fff;
-  }
+}
   
-  #button:hover {
+#button:hover {
     cursor: pointer;
     background-color: #333;
-  }
+}
   
-  #button:active {
+#button:active {
     background-color: #555;
-  }
+}
   
-  #button.show {
+#button.show {
     opacity: 0.8;
     visibility: visible;
-  }
+}
   
