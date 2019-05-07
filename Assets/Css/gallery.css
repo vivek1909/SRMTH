@@ -9,7 +9,9 @@ html {
 }
 
 @keyframes fadein {
-    opacity: 1;
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -27,12 +29,6 @@ html {
     position: fixed;
     animation: 1s fadein 0.5s forwards;
     opacity: 0;
-}
-
-@keyframes fadein {
-    100% {
-        opacity: 1;
-    }
 }
   
 .nav > .nav-header {
