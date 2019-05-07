@@ -73,6 +73,7 @@ html {
 }
   
 .nav > .nav-links > a:hover {
+    color: brown;
     background-color: rgba(0, 0, 0, 0.3);
 }
   
