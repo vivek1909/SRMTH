@@ -32,10 +32,10 @@ $('.counting').each(function() {
     duration: 10000,
     easing:'linear',
     step: function() {
-      $this.text(Math.floor(this.countNum));
+        $this.text(Math.floor(this.countNum));
       },
       complete: function() {
-          $this.text(this.countNum);
+        $this.text(this.countNum);
       }
   });  
 });
