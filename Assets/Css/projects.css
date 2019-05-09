@@ -1,48 +1,246 @@
-/* NAVBAR */
-.bg, #mainNavbar {
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+html, body {
+  background: #f0e6ff;
+  scroll-behavior: smooth;
+  animation: 1s fadein 0.5s forwards;
   opacity: 0;
-  margin-top: 100px;
-  animation: 1s slidefade 1s forwards;
 }
 
-@keyframes slidefade {
+@keyframes fadein {
   100% {
     opacity: 1;
-    margin: 0;
   }
 }
 
-.navbar.scrolled {
-  background: black;
-  transition: background 1s;
+
+
+
+/* Navbar Section */
+  
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
 }
-/* NAVBAR ENDS */
-
-
-
-#projects {
-  background: #d9ffb3;
-}
-
-hr {
-	width: 400px;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.blurb h2 {
-  color: #EA1C2C;
-  font-weight: 100;
-  font-size: 2.5rem;
+  
+.nav > .nav-header {
+    display: inline;
 }
 
-.blurb p {
-  color: #f498b8;
-  font-weight: 100;
-  font-size: 1.125rem;
-  line-height: 2;
+.nav-title a {
+    color: wheat;
+    opacity: 0.9;
 }
 
-.content {
-  margin-top: 100px;
+.nav-title a:hover {
+    color: wheat;
+    opacity: 1;
 }
+  
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+  
+.nav > .nav-btn {
+    display: none;
+}
+  
+.nav-links {
+    opacity: 0.98;
+    font-size: 18px;
+}
+  
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+  
+.nav > .nav-links > a:hover {
+    color: brown;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+  
+.nav > #nav-check {
+    display: none;
+}
+  
+@media (max-width: 700px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+
+
+
+/* Projects Section */
+
+.project {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.project .text {
+  flex-basis: 50%;
+}
+
+
+@media (max-width: 600px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project img {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    color: #fff;
+    padding: 20px 0;
+}
+  
+footer ul {
+    display: flex;
+    list-style-type: none;
+}
+  
+footer ul li {
+    padding: 10px;
+}
+  
+footer p {
+    font-size: 14px;
+    opacity: 0.6;
+    align-self: center;
+}
+  
+@media (max-width: 1100px) {
+    footer p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+  
+footer a:hover i {
+    transform: scale(1.4);
+    transition-duration: 0.3s;
+}
+
+
+
+/* Back to Top Button */
+
+#button {
+    display: inline-block;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+  
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 30px;
+    color: #fff;
+}
+  
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+  
+#button:active {
+    background-color: #555;
+}
+  
+#button.show {
+    opacity: 0.8;
+    visibility: visible;
+}
+  
