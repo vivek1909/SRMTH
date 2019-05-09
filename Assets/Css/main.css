@@ -9,7 +9,7 @@ body, html {
 }
 
 html {
-  animation: 1s fadein 0.5s forwards;
+  animation: 1s fadein 1s forwards;
   opacity: 0;
 }
 
@@ -24,7 +24,7 @@ html {
   width: 100%;
   height: 100vh;
   background: #fff
-  url(https://cdn-images-1.medium.com/max/1600/0*cWpsf9D3g346Va20.gif) no-repeat center ;
+  url(https://cdn.dribbble.com/users/421466/screenshots/2379575/replace-2r-400px.gif) no-repeat center ;
   z-index: 99999;
 }
 
