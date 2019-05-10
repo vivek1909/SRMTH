@@ -1,3 +1,16 @@
+// Preloader
+
+var loader = document.getElementById('preloader');
+
+function myFunction(){
+  loader.style.display = "none";
+}
+
+
+
+
+// Back to top button
+
 var btn = $('#button');
 
 $(window).scroll(function() {
