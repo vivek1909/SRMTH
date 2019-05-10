@@ -167,6 +167,11 @@ html, body {
     .heading hr {
         width: 250px;
     }
+
+    .row {
+        max-width: 70%;
+        margin: 0 auto;
+    }
 }
 
 
