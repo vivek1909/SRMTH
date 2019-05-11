@@ -152,6 +152,10 @@ html {
     padding-top: 80px;
 }
 
+.gallery p {
+    text-align: center;
+}
+
 .gallery h1 {
     text-align: center;
     font: bold 52px "Open Sans", sans-serif;
