@@ -181,7 +181,16 @@ html, body {
 
 /* Team Section */
 
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
 
 
 
