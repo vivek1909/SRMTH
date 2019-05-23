@@ -181,16 +181,16 @@ html, body {
 
 /* Team Section */
 
-.our-team .team-row {
+.team-row {
     margin-left: -40px;
     margin-right: -40px;
 }
 
-.our-team .team-wrap {
+.team-wrap {
     padding: 0 40px;
 }
 
-.our-team .container-fluid {
+.container-fluid {
     padding: 0 50px;
 }
 
@@ -200,7 +200,8 @@ html, body {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     overflow: hidden;
-    width: 100%;
+    width: 60%;
+    height: 60%;
 }
 
 .team-member, .team-img {
