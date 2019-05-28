@@ -1,14 +1,3 @@
-// Navbar
-
-$(function () {
-  $(document).scroll(function() {
-    var $nav = $("#mainNavbar");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  });
-});
-
-
-
 // Preloader
 
 var loader = document.getElementById('preloader');
