@@ -4,6 +4,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  background: aquamarine;
   scroll-behavior: smooth;
   font: normal 16px sans-serif;
 }
@@ -164,12 +165,16 @@ hr {
 
 /* Container Section */
 
-.container h1 {
+.container {
     text-align: center;
     padding-top: 80px;
 }
 
-
+.image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
 
 
 
