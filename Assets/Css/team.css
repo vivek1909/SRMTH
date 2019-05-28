@@ -179,14 +179,18 @@ h2 {
 
 p.designation {
     font: bold 22px "Open Sans", sans-serif;
+    color: #ff8000;
 }
 
 p.intro {
     font: 18px "Open Sans", sans-serif;
+    color: #663300;
 }
 
 .row i {
-    margin: 10px 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 800px) {
