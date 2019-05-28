@@ -172,11 +172,28 @@ h1 {
 }
 
 h2 {
-    font-weight: bold;
-    color: #0d0d0d;
+    font: bold 40px "Open Sans", sans-serif;
+    color: #000033;
+    opacity: 0.8;
 }
 
+p.designation {
+    font: bold 22px "Open Sans", sans-serif;
+}
 
+p.intro {
+    font: 18px "Open Sans", sans-serif;
+}
+
+.row i {
+    margin: 10px 10px;
+}
+
+@media (max-width: 800px) {
+    .row i {
+        margin-bottom: 40px;
+    }
+}
 
 
 /* Footer */
