@@ -200,6 +200,13 @@ p.intro {
     }
 }
 
+#associates p.designation {
+  color: brown;
+}
+
+#associates h2.name {
+  color: #59b300;
+}
 
 
 
