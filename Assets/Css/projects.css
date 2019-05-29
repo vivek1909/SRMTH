@@ -174,7 +174,19 @@ hr {
 
 
 
+/* Main Section */
 
+.flexy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .flexy {
+    flex-direction: column;
+  }
+}
 
 
 
