@@ -5,7 +5,7 @@ body, html {
     text-align: center;
     height: 100%;
     margin: 0;
-    background: aquamarine;
+    background: #ebebfa;
     scroll-behavior: smooth;
     font: normal 16px sans-serif;
 }
@@ -34,7 +34,6 @@ h1 {
     text-align: center;
     font: bold 52px "Open Sans", sans-serif;
     opacity: 0.7;
-    padding-top: 50px;
 }
 
 hr {
@@ -42,7 +41,8 @@ hr {
     height: 3px;
     background-color: #3f51b5;
     border: 0;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 800px) {
@@ -176,7 +176,33 @@ hr {
 
 /* Main Section */
 
+img.img-fluid {
+  width: 450px;
+  height: 450px;
+  border-radius: 20%;
+}
 
+.container .col-md-6 {
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.container .row {
+  margin-bottom: 10%;
+}
+
+.container .row p.lead {
+  margin-top: 30px;
+  color: brown;
+}
+
+@media (max-width: 800px) {
+  img.img-fluid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
 
 
 
