@@ -232,4 +232,23 @@ footer a:hover i {
   visibility: visible;
 }
 
-/* Timeline Section */
+/* Main body content */
+
+.main {
+  padding: 60px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+.grid p.para {
+  width: 50%;
+}
+
+.grid img.image {
+  width: 50%;
+}
