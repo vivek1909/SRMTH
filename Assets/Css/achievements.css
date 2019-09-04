@@ -7,11 +7,20 @@ html {
   margin: 0;
   scroll-behavior: smooth;
   font: normal 16px sans-serif;
+  text-align: center;
 }
 
 html {
   animation: 1s fadein 1s forwards;
   opacity: 0;
+}
+
+hr {
+  width: 250px;
+  height: 3px;
+  background-color: #3f51b5;
+  border: 0;
+  margin-bottom: 50px;
 }
 
 @keyframes fadein {
@@ -235,7 +244,7 @@ footer a:hover i {
 /* Main body content */
 
 .main {
-  padding: 60px;
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -256,6 +265,9 @@ footer a:hover i {
   width: 40%;
   float: right;
   padding: 35px;
+}
+.container h1 {
+  padding-top: 30px;
 }
 
 @media (max-width: 1100px) {
