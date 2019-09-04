@@ -239,16 +239,35 @@ footer a:hover i {
   text-align: center;
 }
 
-.info {
+.grid {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  text-align: center;
 }
 
-.grid p.para {
-  width: 50%;
+.grid .para {
+  width: 60%;
+  float: left;
+  font-size: 1.4em;
+  line-height: 2em;
 }
 
 .grid img.image {
-  width: 50%;
+  width: 40%;
+  float: right;
+  padding: 35px;
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid .para {
+    width: 100%;
+  }
+
+  .grid img.image {
+    width: 100%;
+  }
 }
