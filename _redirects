@@ -1,0 +1,5 @@
+# Redirect domain aliases to primary domain
+https://www.srmth.tk/* https://srmth.in/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://quirky-stallman-a13eb9.netlify.com/* https://srmth.in/:splat 301!
