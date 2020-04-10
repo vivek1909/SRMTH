@@ -50,37 +50,7 @@
     <!-- Navbar
     ================================================================================== -->
 
-    <div class="nav" id="mainNav">
-      <input type="checkbox" id="nav-check" />
-      <div class="nav-header">
-        <a href="index.html"
-          ><img
-            src="srmth.jpg"
-            alt="SRMTH"
-            style="width: 30px; vertical-align: center;"
-        /></a>
-        <div class="nav-title">
-          <a href="index.html" style="text-decoration: none;">SRMTH</a>
-        </div>
-      </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-
-      <div class="nav-links">
-        <a href="index.html#about">About</a>
-        <a href="index.html#domain">Domains</a>
-        <a href="project.html">Projects</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="team.html">Team</a>
-        <a href="index.html#sponsors">Sponsors</a>
-        <a href="index.html#contact">Contact Us</a>
-      </div>
-    </div>
+    <nav data-load="navbar.html"></nav>
 
     <div class="container">
       <h1>Core Team</h1>
@@ -442,38 +412,7 @@
 
     <!-- Footer Section
     ================================================================= -->
-    <footer>
-      <p>
-        <i class="far fa-copyright"></i> 2020 SRM Team Humanoid. All Rights
-        Reserved.
-      </p>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/srmteamhumanoid/"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/srmteamhumanoid/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/srmteamhumanoid/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-      </ul>
-      <p style="color: aqua;">
-        Crafted with <i class="fa fa-heart" style="color: red;"></i> By
-        <a
-          href="https://www.linkedin.com/in/vivek-mittal/"
-          target="_blank"
-          style="color: aqua; text-decoration: none;"
-          >VIVEK MITTAL</a
-        >
-      </p>
-    </footer>
+    <footer data-load="footer.html"></footer>
 
     <!-- Back to Top Button
     =================================================================== -->
@@ -507,6 +446,12 @@
         btn.on("click", function (e) {
           e.preventDefault(), $("html, body").animate({ scrollTop: 0 }, "300");
         });
+
+      $(function () {
+        $("[data-load]").each(function () {
+          $(this).load($(this).data("load"), function () {});
+        });
+      });
     </script>
   </body>
 </html>
