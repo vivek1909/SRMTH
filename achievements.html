@@ -272,26 +272,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script>
-      var loader = document.getElementById("preloader");
-      function myFunction() {
-        loader.style.display = "none";
-      }
-      var btn = $("#button");
-      $(window).scroll(function () {
-        $(window).scrollTop() > 300
-          ? btn.addClass("show")
-          : btn.removeClass("show");
-      }),
-        btn.on("click", function (e) {
-          e.preventDefault(), $("html, body").animate({ scrollTop: 0 }, "300");
-        });
-
-      $(function () {
-        $("[data-load]").each(function () {
-          $(this).load($(this).data("load"), function () {});
-        });
-      });
-    </script>
+    <script src="Assets/main.js"></script>
   </body>
 </html>
